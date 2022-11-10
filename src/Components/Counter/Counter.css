@@ -1,0 +1,44 @@
+
+.counterDesign {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    margin-top: 3em;
+
+
+}
+
+.clickable {
+
+    height: 3em;
+    width: 3em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+    margin-right: 1em;
+    margin-left: 1em;
+
+    color: white;
+    background-color: darkgrey;
+
+    border-radius: 1em;
+
+    cursor: pointer;
+        
+    transition: 0.2s;
+}
+
+.clickable:hover {
+
+    background-color: lightgrey;
+
+    transition: 0.2s;
+
+}

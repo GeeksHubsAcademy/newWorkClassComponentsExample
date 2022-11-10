@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+//This is always imported like this
+
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Home from './Containers/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      {/* This is going to contain the basic routing of the app */}
+      {/* BrowserRouter, Routes and Route are all JSX custom elements, (components) */}
+
+      <BrowserRouter>
+      
+        <Routes>
+
+            {/* Everything contained here, are the changing parts, the containers so to speak */}
+
+            <Route path="/" element={<Home/>}/>
+            
+        </Routes>
+      
+      </BrowserRouter>
+
+      
     </div>
   );
 }
